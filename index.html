@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="">
+                    <div>
+                        <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Number</label>
+                        <input type="number" name="number" id="number">
+                    </div>
+                    <div>
+                        <label>Brithday Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label>Appontment time</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="range" name="range" id="age">
+                    </div>
+                    <div>
+                        <label>color</label>
+                        <input type="color" name="color" id="color">
+                    </div><br>
+                    <div>
+                        <label>payment method</label>:--
+                        <input type="radio" id="Phone pay" name="fav_language" value="Phone pay">Cash on delivery 
+                        <!-- <input type="radio" id="Phone pay" name="fav_language" value="Phone pay"><span>Banking</span>
+                        <input type="radio" id="Phone pay" name="fav_language" value="Phone pay"><span>ATM</span> -->
+                    </div><br>
+                    
+                    <div>
+                        <label>photo</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>number</th>
+                            <th>Brithday</th>
+                            <th>Appointment time</th>
+                            <th>color</th>
+                            <th>payment</th>
+                            <th>photo</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
