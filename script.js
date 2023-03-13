@@ -27,6 +27,7 @@ var form = `<div>
   <div class="form-group mt-3">
     <label for="color">color</label>
     <input type="color" class="form-control" id="color">
+    
   </div><br>
   <div>
                     
